@@ -4,7 +4,7 @@ import es.eriktorr.katas.NumberTokenizer.digitsFrom
 
 object LuhnValidator {
 
-  def isCreditCard(number: String): Boolean = {
+  def isValidLuhn(number: String): Boolean = {
     val (oddDigits, evenDigits) = digitsFrom(number)
       .reverse
       .zipWithIndex
